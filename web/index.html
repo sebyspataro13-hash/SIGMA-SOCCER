@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131d">
+  <title>SIGMA SOCCER</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div id="loading" class="loading">
+    <div class="loading-mark">SIGMA <span>SOCCER</span></div>
+    <p>IL CAMPO TI ASPETTA</p>
+    <div class="progress"><i></i></div>
+    <small id="loading-status">PREPARAZIONE STADIO...</small>
+  </div>
+  <main id="app" class="app hidden">
+    <header class="topbar">
+      <div class="brand">SIGMA <span>SOCCER</span></div>
+      <div class="season">STAGIONE 01 <b>•</b> ITALIA</div>
+    </header>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">IL TUO CLUB. LA TUA STORIA.</p>
+        <h1>DOMINA<br><em>IL CAMPO.</em></h1>
+        <p class="intro">Crea la tua squadra. Scopri nuovi talenti. Diventa una leggenda.</p>
+        <div class="status-pill">● ANTEPRIMA 3D — SIGMA SOCCER</div>
+      </div>
+      <div id="stadium" class="stadium" aria-label="Anteprima 3D dello stadio"></div>
+    </section>
+    <section class="players">
+      <div class="section-heading">
+        <div><p class="eyebrow">I PRIMI TALENTI</p><h2>LA TUA ROSA</h2></div>
+        <span>CARTE GIOCATORE</span>
+      </div>
+      <div id="player-list" class="player-list"></div>
+    </section>
+    <footer>© SIGMA SOCCER <span>•</span> PROTOTIPO IN SVILUPPO</footer>
+  </main>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
